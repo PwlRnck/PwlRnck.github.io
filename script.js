@@ -139,10 +139,9 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      success: function() {
-        reload();
-      }
+      success: getAllTasks
     });
+    getAllTasks();
   }
 
   function toggleEditingState() {
